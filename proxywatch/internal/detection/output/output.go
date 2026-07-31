@@ -201,7 +201,7 @@ func EmitDetectionOutputs(
 			ReportDetectionOutputError(err)
 		}
 	}
-	EmitSentinelDetections(now, cycle, hostScope, flagged)
+	EmitSentinelDetections(now, cycle, hostScope, scored, opts.MinScore)
 }
 
 func AppendDebugDetectionLog(

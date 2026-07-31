@@ -79,6 +79,7 @@ const (
 	KeystoreFieldDisableClientCert
 	KeystoreFieldTrustOnFirstUse
 	KeystoreFieldSentinelAuth
+	KeystoreFieldSentinelMode
 	KeystoreFieldSentinelEndpoint
 	KeystoreFieldSentinelDCRID
 	KeystoreFieldSentinelStream
@@ -166,6 +167,7 @@ const (
 	keystoreFieldDisableClientCert  = KeystoreFieldDisableClientCert
 	keystoreFieldTrustOnFirstUse    = KeystoreFieldTrustOnFirstUse
 	keystoreFieldSentinelAuth       = KeystoreFieldSentinelAuth
+	keystoreFieldSentinelMode       = KeystoreFieldSentinelMode
 	keystoreFieldSentinelEndpoint   = KeystoreFieldSentinelEndpoint
 	keystoreFieldSentinelDCRID      = KeystoreFieldSentinelDCRID
 	keystoreFieldSentinelStream     = KeystoreFieldSentinelStream

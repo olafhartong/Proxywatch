@@ -246,6 +246,7 @@ func (m KeystoreModel) renderFields() string {
 		{keystoreFieldDisableClientCert, "No client crt", keystore.MaskValue("PROXYWATCH_DISABLE_CLIENT_CERT", vals["PROXYWATCH_DISABLE_CLIENT_CERT"])},
 		{keystoreFieldTrustOnFirstUse, "Trust TOFU   ", keystore.MaskValue("PROXYWATCH_TRUST_ON_FIRST_USE", vals["PROXYWATCH_TRUST_ON_FIRST_USE"])},
 		{keystoreFieldSentinelAuth, "Sentinel auth", keystore.MaskValue("PROXYWATCH_SENTINEL_AUTH", vals["PROXYWATCH_SENTINEL_AUTH"])},
+		{keystoreFieldSentinelMode, "Sentinel mode", keystore.MaskValue("PROXYWATCH_SENTINEL_MODE", vals["PROXYWATCH_SENTINEL_MODE"])},
 		{keystoreFieldSentinelEndpoint, "Sentinel DCE ", keystore.MaskValue("PROXYWATCH_SENTINEL_DCE_ENDPOINT", vals["PROXYWATCH_SENTINEL_DCE_ENDPOINT"])},
 		{keystoreFieldSentinelDCRID, "Sentinel DCR ", keystore.MaskValue("PROXYWATCH_SENTINEL_DCR_ID", vals["PROXYWATCH_SENTINEL_DCR_ID"])},
 		{keystoreFieldSentinelStream, "Sentinel strm", keystore.MaskValue("PROXYWATCH_SENTINEL_STREAM_NAME", vals["PROXYWATCH_SENTINEL_STREAM_NAME"])},

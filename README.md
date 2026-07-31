@@ -134,11 +134,12 @@ Manages API keys, tokens, and runtime settings with AES-256-GCM encryption.
 |----------|------|
 | BloodHound | `BLOODHOUND_API_URL`, `BLOODHOUND_API_TOKEN`, `BLOODHOUND_API_TOKEN_ID` |
 | Detection | `PROXYWATCH_DETECT_DEBUG_LOG`, `PROXYWATCH_DETECT_RULES_JSON` |
-| Microsoft Sentinel | `PROXYWATCH_SENTINEL_AUTH`, `PROXYWATCH_SENTINEL_DCE_ENDPOINT`, `PROXYWATCH_SENTINEL_DCR_ID`, `PROXYWATCH_SENTINEL_STREAM_NAME`, `AZURE_TENANT_ID`, `AZURE_CLIENT_ID`, `AZURE_CLIENT_SECRET` |
+| Microsoft Sentinel | `PROXYWATCH_SENTINEL_AUTH`, `PROXYWATCH_SENTINEL_MODE`, `PROXYWATCH_SENTINEL_DCE_ENDPOINT`, `PROXYWATCH_SENTINEL_DCR_ID`, `PROXYWATCH_SENTINEL_STREAM_NAME`, `AZURE_TENANT_ID`, `AZURE_CLIENT_ID`, `AZURE_CLIENT_SECRET` |
 | Agent/TLS | `PROXYWATCH_TLS_DIR`, `PROXYWATCH_AGENT_TOKEN` |
 
 See [`docs/sentinel.md`](docs/sentinel.md) for DCE/DCR setup, managed-identity
-and application-secret authentication, the input stream schema, and example KQL.
+and application-secret authentication, cost-aware output modes (balanced by
+default), the input stream schema, and example KQL.
 
 ## How Classification Works
 

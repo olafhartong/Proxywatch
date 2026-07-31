@@ -24,6 +24,7 @@ func ApplyDetectionOutputRuntimeConfig() error {
 	}
 	return output.ConfigureSentinelOutput(output.SentinelConfig{
 		AuthMode:     keystore.RuntimeValue("PROXYWATCH_SENTINEL_AUTH"),
+		Mode:         keystore.RuntimeValue("PROXYWATCH_SENTINEL_MODE"),
 		Endpoint:     keystore.RuntimeValue("PROXYWATCH_SENTINEL_DCE_ENDPOINT"),
 		DCRID:        keystore.RuntimeValue("PROXYWATCH_SENTINEL_DCR_ID"),
 		StreamName:   keystore.RuntimeValue("PROXYWATCH_SENTINEL_STREAM_NAME"),

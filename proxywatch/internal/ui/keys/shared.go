@@ -76,6 +76,7 @@ const (
 	KeystoreFieldDisableClientCert
 	KeystoreFieldTrustOnFirstUse
 	KeystoreFieldSentinelAuth
+	KeystoreFieldSentinelMode
 	KeystoreFieldSentinelEndpoint
 	KeystoreFieldSentinelDCRID
 	KeystoreFieldSentinelStream
@@ -961,6 +962,8 @@ func KeystoreFieldEnvKey(field int) (string, bool) {
 		return "PROXYWATCH_TRUST_ON_FIRST_USE", true
 	case KeystoreFieldSentinelAuth:
 		return "PROXYWATCH_SENTINEL_AUTH", true
+	case KeystoreFieldSentinelMode:
+		return "PROXYWATCH_SENTINEL_MODE", true
 	case KeystoreFieldSentinelEndpoint:
 		return "PROXYWATCH_SENTINEL_DCE_ENDPOINT", true
 	case KeystoreFieldSentinelDCRID:
